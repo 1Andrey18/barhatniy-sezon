@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Номер</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+    <div class="container nav">
+
+      <div class="header-left">
+
+        <a href="tel:89242338822">
+          <i class="fa-solid fa-phone"></i>
+          8 (924) 233-88-22
+        </a>
+
+        <a href="tel:89242522244">
+          <i class="fa-solid fa-phone"></i>
+          8 (924) 252-22-44
+        </a>
+
+      </div>
+
+      <nav class="nav-center">
+
+        <a href="index.html#about">О нас</a>
+
+<a href="index.html#rooms">Номера</a>
+
+<a href="index.html#services">Услуги</a>
+
+<a href="index.html#gallery">Галерея</a>
+
+<a href="index.html#contacts">Контакты</a>
+
+      </nav>
+
+      <div class="header-right">
+
+        <a href="https://t.me/daminiktoretto" target="_blank">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/baza_barxatni_sezon?igsh=MXhxNjBrMTV4dTlmcQ=="
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+<section class="room-page">
+
+  <div class="container">
+
+    <!-- BREADCRUMBS -->
+
+    <div class="breadcrumbs">
+
+      <a href="index.html">
+        Главная
+      </a>
+
+      <span>></span>
+
+      <span>
+        Каталог номеров
+      </span>
+
+    </div>
+
+ <div class="room-top">
+
+    <!-- LEFT -->
+    <div class="room-gallery">
+
+        <div class="main-room-image"
+        id="mainRoomImage"></div>
+
+        <div class="room-thumbs"
+        id="roomThumbs"></div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="room-info-page">
+
+        <h1 id="roomTitle"></h1>
+
+        <p id="roomDesc"></p>
+
+        <div class="room-options"
+        id="roomOptions"></div>
+
+        <div class="room-details">
+
+            <p>
+                Кол-во номеров:
+                <span id="roomCount"></span>
+            </p>
+
+            <p>
+                Цена:
+                <span id="roomPrice"></span>
+            </p>
+
+            <p id="roomStatus"></p>
+
+            <p id="roomText"></p>
+
+        </div>
+
+        <a href="index.html#contacts"
+        class="room-btn">
+            Узнать подробнее
+        </a>
+
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div class="gallery-popup" id="galleryPopup">
+
+    <span class="close-popup" id="closePopup">
+        ✕
+    </span>
+
+    <img id="popupImage">
+
+    <button class="popup-btn prev"
+    id="prevImage">
+        ❮
+    </button>
+
+    <button class="popup-btn next"
+    id="nextImage">
+        ❯
+    </button>
+
+</div>
+
+    <!-- TEXT -->
+
+    <div class="room-text">
+
+      <p id="roomText"></p>
+
+    </div>
+
+    <!-- OTHER ROOMS -->
+
+<div class="other-rooms">
+
+    <h2 class="other-title">
+        Другие номера
+    </h2>
+
+    <div class="other-slider">
+
+<button class="other-arrow prev">
+    ❮
+</button>
+
+<div class="other-grid">
+
+        <!-- CARD -->
+
+        <div class="other-card">
+
+            <div class="room-image" style="background-image:url('./images/house52.jpg');"></div>
+
+            <h4>
+                5-ти местный люкс
+            </h4>
+
+            <div class="other-bottom">
+
+                <a href="room.html?id=lux5">
+                    Подробнее
+                </a>
+
+                <div class="other-prices">
+
+                    <span>
+                         5000 ₽
+                    </span>
+
+                    <span>
+                         10000 ₽
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div class="other-card">
+
+            <div class="room-image" style="background-image:url('./images/1xluxury4ti4.jpg');"></div>
+
+            <h4>
+                2-х комнатный люкс,4-х местный(1этаж)
+            </h4>
+
+            <div class="other-bottom">
+
+                <a href="room.html?id=lux1x4x">
+                    Подробнее
+                </a>
+
+                <div class="other-prices">
+
+                    <span>
+                        от 5500 ₽
+                    </span>
+
+                    <span>
+                        от 11000 ₽
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div class="other-card">
+
+            <div class="room-image" style="background-image:url('./images/2xluxury5ti5.jpg');"></div>
+
+            <h4>
+                2-х комнатный люкс,5-ти местный(2этаж)
+            </h4>
+
+            <div class="other-bottom">
+
+                <a href="room.html?id=lux2x5ti">
+                    Подробнее
+                </a>
+
+                <div class="other-prices">
+
+                    <span>
+                        от 4500 ₽
+                    </span>
+
+                    <span>
+                        от 8000 ₽
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button class="other-arrow next">
+    ❯
+</button>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+  </div>
+</section>
+<footer class="footer">
+
+  <div class="container footer-wrapper">
+
+    <div class="footer-links">
+
+      <a href="index.html">Главная</a>
+      <a href="#">Номера и цены</a>
+      <a href="#">Услуги</a>
+
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#">О нас</a>
+      <a href="#">Галерея</a>
+      <a href="#">Контакты</a>
+
+    </div>
+
+    <div class="footer-center">
+
+      <a href="#" class="footer-btn">
+        Получить консультацию
+      </a>
+
+    </div>
+
+    <div class="footer-right">
+
+      <h3>8 (924) 233-88-22</h3>
+
+      <p>
+        Режим работы: 10:00 до 22:00
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+const rooms = {
+
+  ekonom:{
+    title:"Эконом",
+    count:"2",
+    desc:"4-х местный номер",
+    price:"от 2000 ₽",
+    status:"Свободные номера: в наличии",
+
+    images: [
+      "images/econom.jpg",
+      "images/econom1.jpg"
+  ],
+    
+    options:[
+      "Вентилятор",
+      "Постельное",
+      "3 кровати",
+      "Стол"
+    ]
+  },
+
+  standart:{
+    title:"Стандарт",
+    count:"3",
+    price:"от 3000 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/standart.jpg",
+      "images/standart1.jpg",
+      "images/standart2.jpg"
+  ],
+    options:[
+      "Двухспальная кровать",
+      "Две односпальные кровати",
+      "Постельное",
+      "Зеркало",
+      "Шкаф",
+      "4 стула",
+      "Стол",
+      "Тумбочки",
+      "Унитаз",
+      "Раковина",
+      "Вентилятор"
+    ]
+  },
+
+  comfort:{
+    title:"Комфорт",
+    count:"4",
+    desc:"Комфортный номер",
+    price:"от 4000 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/komfort.jpg",
+      "images/komfort1.jpg",
+      "images/komfort2.jpg"
+  ],
+    options:[
+      "Холодильник",
+      "Телевизор",
+      "Двухспальня кровать",
+      "Диван",
+      "Две односпальные кровати",
+      "Постельное",
+      "Стол",
+      "Шкаф",
+      "4 стула",
+      "Зеркало",
+      "Душ",
+      "Унитаз",
+      "Раковина",
+      "Вентилятор"
+    ]
+  },
+
+  house4:{
+    title:"4-х местный дом",
+    count:"1",
+    desc:"Отдельный коттедж",
+    price:"от 4500 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/4xmesnie.jpg",
+      "images/4xmesnie2.jpg",
+      "images/4xmesnie3.jpg",
+      "images/4xmesnie1.jpg"
+  ],
+    options:[
+      "Холодильник",
+      "Посуда",
+      "Микроволновка",
+      "Телевизор",
+      "Двухспальня кровать",
+      "Диван",
+      "Постельное",
+      "Кухня",
+      "Шкаф",
+      "Зеркало",
+      "Душ",
+      "Унитаз",
+      "Раковина",
+      "Фен",
+      "Стол со скамейкой",
+      "Кондиционер"
+      
+    ]
+  },
+
+    lux5:{
+    title:"5-ти местный люкс",
+    count:"1",
+    desc:"Отдельный коттедж",
+    price:"от 5000 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/house52.jpg",
+      "images/house51.jpg",
+      "images/house5.jpg",
+      "images/house53.jpg"
+  ],
+    options:[
+      "Холодильник",
+      "Микроволновка",
+      "Посуда",
+      "Телевизор",
+      "Двухспальня кровать",
+      "Односпальня кровать",
+      "Диван",
+      "Тумбочка",
+      "Постельное",
+      "Кухня",
+      "2 Шкафа",
+      "Зеркало",
+      "Душ",
+      "Раковина",
+      "Унитаз",
+      "Фен",
+      "Стол со скамейкой",
+      "Стол, 4 стула",
+      "Кондиционер"
+      
+    ]
+  },
+
+  lux1x4x:{
+    title:"2-х комнатный люкс,4-х местный(1этаж)",
+    count:"1",
+    desc:"Отдельный коттедж",
+    price:"от 5500 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/1xluxury4ti4.jpg",
+      "images/1xluxury4ti.jpg",
+      "images/1xluxury4ti2.jpg",
+      "images/1xluxury4ti3.jpg",
+      "images/1xluxury4ti1.jpg"
+      
+  ],
+    options:[
+      "Холодильник",
+      "Микроволновка",
+      "Посуда",
+      "Телевизор",
+      "Двухспальня кровать",
+      "Диван",
+      "Тумбочка",
+      "Светильник",
+      "Постельное",
+      "Кухня",
+      "2 Шкафа",
+      "Зеркало",
+      "Душ",
+      "Раковина",
+      "Унитаз",
+      "Фен",
+      "Стол, 4 стула",
+      "Кондиционер"
+      
+    ]
+  },
+
+  lux2x5ti:{
+    title:"2-х комнатный люкс,5-ти местный(2этаж)",
+    count:"1",
+    desc:"Отдельный коттедж",
+    price:"от 6000 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/2xluxury5ti.jpg",
+      "images/2xluxury5ti1.jpg",
+      "images/2xluxury5ti5.jpg",
+      "images/2xluxury5ti3.jpg",
+      "images/2xluxury5ti2.jpg",
+      "images/2xluxury5ti4.jpg"
+  ],
+    options:[
+       "Холодильник",
+      "Микроволновка",
+      "Посуда",
+      "Телевизор",
+      "Две двухспальные кровати",
+      "Диван",
+      "Тумбочка",
+      "Светильник",
+      "Постельное",
+      "Кухня",
+      "Шкаф",
+      "Зеркало",
+      "Душ",
+      "Раковина",
+      "Унитаз",
+      "Фен",
+      "Стол, 6 стульев",
+      "Кондиционер"
+      
+    ]
+  },
+
+  luxsbalkonom:{
+    title:"Однокомнатный с балконом люкс,4-х местный",
+    count:"2",
+    desc:"Отдельный коттедж",
+    price:"от 4500 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/balkonluxury.jpg",
+      "images/balkonluxury3.jpg",
+      "images/balkonluxury2.jpg",
+      "images/balkonluxury4.jpg",
+      "images/balkonluxury1.jpg"
+  ],
+    options:[
+       "Холодильник",
+      "Микроволновка",
+      "Посуда",
+      "Телевизор",
+      "Двухспальня кровать",
+      "Диван",
+      "Тумбочки",
+      "Постельное",
+      "Кухня",
+      "Зеркало",
+      "Душ",
+      "Унитаз",
+      "Фен",
+      "Стол со скамейкой",
+      "Стол, 2 стула",
+      "Кондиционер"
+      
+    ]
+  },
+
+  luxsterracoi:{
+    title:"Однокомнатный с террасой люкс,4-х местный",
+    count:"2",
+    desc:"Отдельный коттедж",
+    price:"от 4500 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/balkonluxury.jpg",
+      "images/balkonluxury3.jpg",
+      "images/balkonluxury2.jpg",
+      "images/balkonluxury4.jpg",
+      "images/balkonluxury1.jpg"
+  ],
+    options:[
+        "Холодильник",
+      "Микроволновка",
+      "Посуда",
+      "Телевизор",
+      "Двухспальня кровать",
+      "Диван",
+      "Тумбочки",
+      "Постельное",
+      "Кухня",
+      "Зеркало",
+      "Душ",
+      "Унитаз",
+      "Фен",
+      "Стол со скамейкой",
+      "Стол, 2 стула",
+      "Кондиционер"
+  ]
+  },
+
+  lux2x7mi:{
+    title:"2-х этажный дом люкс,7-ми местный",
+    count:"1",
+    desc:"Отдельный коттедж",
+    price:"от 8000 ₽",
+    status:"Свободные номера: в наличии",
+    images: [
+      "images/2xdom7mi.jpg",
+      "images/2xdom7mi3.jpg",
+      "images/2xdom7mi2.jpg",
+      "images/2xdom7mi1.jpg"
+  ],
+    options:[
+        "Холодильник",
+      "Микроволновка",
+      "Посуда",
+      "Телевизор",
+      "Двухспальня кровать",
+      "3 Дивана",
+      "Тумбочки",
+      "Светильник",
+      "Постельное",
+      "Кухня",
+      "Шкаф",
+      "Зеркало",
+      "Душ",
+      "Раковина",
+      "Унитаз",
+      "Фен",
+      "Стол со скамейкой",
+      "Стол, 4 стула",
+      "Кондиционер"
+      
+    ]
+  }
+
+};
+
+
+
+
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+
+const room = rooms[id];
+
+document.getElementById("roomTitle").textContent =
+room.title;
+
+document.getElementById("roomDesc").textContent =
+room.desc;
+
+document.getElementById("roomCount").textContent =
+room.count;
+
+document.getElementById("roomPrice").textContent =
+room.price;
+
+document.getElementById("roomText").textContent =
+room.text;
+const optionsContainer =
+document.getElementById("roomOptions");
+
+room.options.forEach(option => {
+
+    const span =
+    document.createElement("span");
+
+    span.textContent = option;
+
+    optionsContainer.appendChild(span);
+
+});
+
+const mainRoomImage =
+document.getElementById("mainRoomImage");
+
+const roomThumbs =
+document.getElementById("roomThumbs");
+
+const popup =
+document.getElementById("galleryPopup");
+
+const popupImage =
+document.getElementById("popupImage");
+
+const closePopup =
+document.getElementById("closePopup");
+
+const prevImage =
+document.getElementById("prevImage");
+
+const nextImage =
+document.getElementById("nextImage");
+
+let currentImage = 0;
+
+/* MAIN IMAGE */
+
+function updateMainImage(index){
+
+    currentImage = index;
+
+    mainRoomImage.style.backgroundImage =
+    `url(${room.images[index]})`;
+
+    popupImage.src = room.images[index];
+
+    document.querySelectorAll(".thumb")
+    .forEach((thumb,i)=>{
+
+        thumb.classList.toggle("active",i===index);
+
+    });
+
+}
+
+updateMainImage(0);
+
+/* THUMBS */
+
+room.images.forEach((image,index)=>{
+
+    const thumb =
+    document.createElement("div");
+
+    thumb.className = "thumb";
+
+    thumb.style.backgroundImage =
+    `url(${image})`;
+
+    thumb.addEventListener("click",()=>{
+
+        updateMainImage(index);
+
+    });
+
+    roomThumbs.appendChild(thumb);
+
+});
+
+/* OPEN POPUP */
+
+mainRoomImage.addEventListener("click",()=>{
+
+    popup.classList.add("active");
+
+});
+
+/* CLOSE */
+
+closePopup.addEventListener("click",()=>{
+
+    popup.classList.remove("active");
+
+});
+
+/* NEXT */
+
+nextImage.addEventListener("click",()=>{
+
+    currentImage++;
+
+    if(currentImage >= room.images.length){
+
+        currentImage = 0;
+
+    }
+
+    updateMainImage(currentImage);
+
+});
+
+/* PREV */
+
+prevImage.addEventListener("click",()=>{
+
+    currentImage--;
+
+    if(currentImage < 0){
+
+        currentImage =
+        room.images.length - 1;
+
+    }
+
+    updateMainImage(currentImage);
+
+});
+
+/* CLOSE BG */
+
+popup.addEventListener("click",(e)=>{
+
+    if(e.target === popup){
+
+        popup.classList.remove("active");
+
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key === "Escape"){
+
+        popup.classList.remove("active");
+
+    }
+
+});
+document.getElementById("roomPrice").textContent =
+room.price;
+
+document.getElementById("roomStatus").textContent =
+room.status;
+
+</script>
+
+</body>
+</html>
